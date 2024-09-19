@@ -152,7 +152,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 
 ## ✅ Example Usage: 🚫 Ban
 
-### Game Tag With Spacing
+#### Game Tag With Spacing
 
 - **Via Bot**:  
   `/mc ban "Zoexaka YT" You're Too Overpowered`
@@ -160,7 +160,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 - **Via In-Game Command**:  
   `!ban "Zoexaka YT" You're Too Overpowered`
 
-### Game Tag With No Spacing
+#### Game Tag With No Spacing
 
 - **Via Bot**:  
   `/mc ban Hyruua You're Too Overpowered`
@@ -168,7 +168,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 - **Via In-Game Command**:  
   `!ban Hyruua You're Too Overpowered`
 
-### You Can Also Use Player ID Or User Number
+#### You Can Also Use Player ID Or User Number
 
 Instead Of Using A Game Tag, You Can Ban Or Unban Users By Their Player ID Or User Number If Available.
 
