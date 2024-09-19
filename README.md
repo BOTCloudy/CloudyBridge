@@ -135,7 +135,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 
 ## 📜 Extra Custom Commands 
 > [!NOTE]  
-> 🤖 _Commands Can Only Be Accessed Using BOT Only_
+> 🤖 _Commands Can Only Be Accessed Using BOT_
 
 | Command                                    | Description                                                     |
 |--------------------------------------------|-----------------------------------------------------------------|
@@ -150,7 +150,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `find`                                🤖 | Find Player Information Using Game Tag, Player ID, Or User.                                  |
 | `reset`                                    | Reset CloudyBridge Database.                                 |
 
-## Example Usage: 🚫 Ban Command
+## ✅ Example Usage: 🚫 Ban Command
 
 ### Game Tag With Spacing
 
