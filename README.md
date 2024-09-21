@@ -17,7 +17,7 @@ Welcome To **CloudyBridge** Add-On Integration For Your Minecraft Bedrock Dedica
 To Get Started With CloudyBridge, Follow These Steps:
 
 1. **Register For Premium Access**:  
-   Contact Our Bot At **+62 851-7986-2199** To Register For Premium Access And Unlock The Full Potential Of CloudyBridge.
+   Contact Our Bot At `+62 851-7986-2199` To Register For Premium Access And Unlock The Full Potential Of CloudyBridge.
    Use `?premium` Command And Send Message.
 
 2. **Set Up Groups**:  
@@ -32,15 +32,15 @@ To Get Started With CloudyBridge, Follow These Steps:
   
     <img src="https://github.com/user-attachments/assets/25fef158-6103-4545-9649-40c1e5dc6459" width="250px">  <img src="https://github.com/user-attachments/assets/64320ae2-d19d-4fc0-9aa1-bbe9024a9cd6" width="250px">
 
-7. **Generate An Auth Code**:
+4. **Generate An Auth Code**:
    Generate Authentication Code In Admin Group Using `/mc auth putSomeRandomText` Commands.
    
    <img src="https://github.com/user-attachments/assets/c939f5c4-89af-49ad-9b0c-6d1fa7ff4690" width="250px">
 
-3. **Download Add-On**:  
+5. **Download Add-On**:  
    Go To [Releases](https://github.com/BOTCloudy/CloudyBridge/releases) Section Of This Repository, Download Minceraft Add-On, And Extract It To Your Desired Location.
 
-9. **Configure Server**:
+6. **Configure Server**:
    - Navigate To `scripts` Folder And Edit The `config.js` File.
    - Match Server ID And Auth Code You Generated Earlier In The Admin Group.
   
@@ -64,7 +64,7 @@ To Get Started With CloudyBridge, Follow These Steps:
    [
        {
            "pack_id": "807735f8-8cbb-4915-a33a-d771d68abc02",
-           "version": [1,1,0]
+           "version": [1,1,1]
        }
    ]
    ```
@@ -90,10 +90,10 @@ To Get Started With CloudyBridge, Follow These Steps:
    op-permission-level=4
    ```
 
-10. **Install Behavior Pack**:
+7. **Install Behavior Pack**:
    Move The `CloudyBridge` Folder Into Your `behavior_packs` Directory.
 
-11. **Start Your Server**:  
+8. **Start Your Server**:  
    Start Your Minecraft Dedicated Server, And You Should See A Notification In The Console `[Scripting] </> REST Server Online` That Everything Is Set Up Correctly.
 
 ## 🔒 Securing Your Server
@@ -141,13 +141,13 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 |--------------------------------------------|-----------------------------------------------------------------|
 | `list`                                    🤖 | Show Lists Of Online Players.                                    |
 | `allowlist add <GameTag>`                  | Add A Game Tag To allowlist. Not Recomended To Use, Instead Of Using `reg` Via Bot.                                |
-| `allowlist remove <GameTag>`               | Remove A Game Tag From allowlist. Not Recomended To Use, Instead Of Using `unreg` Via Bot.                           |
+| `allowlist remove <GameTag>`               | Remove A Game Tag From allowlist. Not Recomended To Use.                           |
 | `allowlist <true/false>`                   | Enable Or Disable allowlist.                                 |
 | `ban <GameTag/PlayerID/User> <Reason:Optional>`   | Ban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `unban <GameTag/PlayerID/User> <Reason:Optional>` | Unban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `kick <GameTag/PlayerID/User> <Reason:Optional>`  | Kick Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `database`                                🤖 | Show CloudyBridge Database.                                  |
-| `find`                                🤖 | Find Player Information Using Game Tag, Player ID, Or User.                                  |
+| `player`                                🤖 | Find Player Information Using Game Tag, Player ID, Or User.                                  |
 | `reset`                                    | Reset CloudyBridge Database.                                 |
 
 ## ✅ Example Usage: 🚫 Ban
