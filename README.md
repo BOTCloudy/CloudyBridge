@@ -139,15 +139,16 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 
 | Command                                    | Description                                                     |
 |--------------------------------------------|-----------------------------------------------------------------|
-| `list`                                    🤖 | Show Lists Of Online Players.                                    |
-| `allowlist add <GameTag>`                  | Add A Game Tag To allowlist. Not Recomended To Use, Instead Of Using `reg` Via Bot.                                |
-| `allowlist remove <GameTag>`               | Remove A Game Tag From allowlist. Not Recomended To Use.                           |
+| `list`                                  🤖 | Show Lists Of Online Players.                                   |
+| `reg`                                  🤖 | User Registration To Play On The Server When allowlist is Enabled.|
 | `allowlist <true/false>`                   | Enable Or Disable allowlist.                                 |
+| `allowlist add <GameTag>`                  | Add A Game Tag To allowlist. Not Recomended To Use, Instead Of Using `reg` Via Bot.|
+| `allowlist remove <GameTag>`               | Remove A Game Tag From allowlist. Not Recomended To Use.                           |
 | `ban <GameTag/PlayerID/User> <Reason:Optional>`   | Ban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `unban <GameTag/PlayerID/User> <Reason:Optional>` | Unban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `kick <GameTag/PlayerID/User> <Reason:Optional>`  | Kick Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
+| `player`                                 | Find Player Information Using Game Tag, Player ID, Or User.      |
 | `database`                                🤖 | Show CloudyBridge Database.                                  |
-| `player`                                🤖 | Find Player Information Using Game Tag, Player ID, Or User.                                  |
 | `reset`                                    | Reset CloudyBridge Database.                                 |
 
 ## ✅ Example Usage: 🚫 Ban
