@@ -45,16 +45,20 @@ To Get Started With CloudyBridge, Follow These Steps:
    - Match Server ID And Auth Code You Generated Earlier In The Admin Group.
   
   ```javascript
-  export default {
-    "server": "default", // Server ID From Admin Group Initialization
-    "auth": "lts6cloudybridge", // Auth Code That You Already Set From Admin Group
+   export default {
+    "server": "", // Server ID From Admin Group Initialization
+    "auth": "", // Auth Code That You Already Set From Admin Group
     "prefix": "!", // Prefix Custom Command
     "gt": "§3§l<CLOUDY> §r§b", // Custom GT For Command Reply
     "join": "§b§lSilahkan Gabung Ke Group Untuk Bermain.\n§r§ehttps://chat.whatsapp.com/qwerty123", // Notification When Member Isn't Register
     "banned": "§4§lKamu Sudah Dibanned.", // Notification When Member Has Been Banned
-    "reason-in": "§6-> ", // Custom Sign For In-Game Reason
-    "reason-out": "§r§e-> " // Custom Sign For Reason When Trying To Join
-  }
+    "joinTimeout": 60, // Number In Seconds, How Long Will It Take For Unregistered Players To Play Trial On Your Server
+    "bannedTimeout": 10, // Number In Seconds How Long Does It Take To Kick Banned Players On Your Server
+    "reasonIn": "§r§6-> ", // Custom Sign For In-Game Reason
+    "reasonOut": "§r§e-> ", // Custom Sign For Reason When Trying To Join
+    "theEndOpen": "20.00 31/12/2024", // Format: HH.mm DD/MM/YYY, Ex: "20.00 31/12/2024"
+    "theEndNotification": "The End Belum Dibuka Hingga Waktu Yang Telah Ditetapkan" // Notification For The End
+   }
   ```
 
   - Go To Root Folder `worlds\<WorldName>\` And Open `world_behavior_packs.json`, If You Didn't See This, Just Create By That Names.
@@ -64,7 +68,7 @@ To Get Started With CloudyBridge, Follow These Steps:
    [
        {
            "pack_id": "807735f8-8cbb-4915-a33a-d771d68abc02",
-           "version": [1,1,1]
+           "version": [0,0,0]
        }
    ]
    ```
@@ -139,17 +143,18 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 
 | Command                                    | Description                                                     |
 |--------------------------------------------|-----------------------------------------------------------------|
-| `list`                                  🤖 | Show Lists Of Online Players.                                   |
-| `reg`                                  🤖 | User Registration To Play On The Server When allowlist is Enabled.|
-| `allowlist <true/false>`                   | Enable Or Disable allowlist.                                 |
-| `allowlist add <GameTag>`                  | Add A Game Tag To allowlist. Not Recomended To Use, Instead Of Using `reg` Via Bot.|
-| `allowlist remove <GameTag>`               | Remove A Game Tag From allowlist. Not Recomended To Use.                           |
-| `ban <GameTag/PlayerID/User> <Reason:Optional>`   | Ban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
+| `list` 🤖 | Show Lists Of Online Players. |
+| `reg` 🤖 | User Registration To Play On The Server When allowlist is Enabled.|
+| `allowlist <true/false>` | Enable Or Disable allowlist. |
+| `allowlist add <GameTag>` | Add A Game Tag To allowlist. Not Recomended To Use, Instead Of Using `reg` Via Bot. |
+| `allowlist remove <GameTag>` | Remove A Game Tag From allowlist. |
+| `ban <GameTag/PlayerID/User> <Reason:Optional>` | Ban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `unban <GameTag/PlayerID/User> <Reason:Optional>` | Unban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
-| `kick <GameTag/PlayerID/User> <Reason:Optional>`  | Kick Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
-| `player`                                 | Find Player Information Using Game Tag, Player ID, Or User.      |
-| `database`                                🤖 | Show CloudyBridge Database.                                  |
-| `reset`                                    | Reset CloudyBridge Database.                                 |
+| `kick <GameTag/PlayerID/User> <Reason:Optional>` | Kick Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
+| `player` | Find Player Information Using Game Tag, Player ID, Or User. |
+| `database` | Show Player Database. |
+| `config` | Show / Set Internal Config Depends On Key And Value. |
+| `reset <config/player>` | Reset CloudyBridge Database. |
 
 ## ✅ Example Usage: 🚫 Ban
 
