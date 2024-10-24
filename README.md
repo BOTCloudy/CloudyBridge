@@ -48,16 +48,23 @@ To Get Started With CloudyBridge, Follow These Steps:
    export default {
     "server": "", // Server ID From Admin Group Initialization
     "auth": "", // Auth Code That You Already Set From Admin Group
+    "whitelist": [], // Allow Specific GT To Use In-Game Command, Ex: ["fankyfankz","Wverrr"]
+
     "prefix": "!", // Prefix Custom Command
     "gt": "§3§l<CLOUDY> §r§b", // Custom GT For Command Reply
+
     "join": "§b§lSilahkan Gabung Ke Group Untuk Bermain.\n§r§ehttps://chat.whatsapp.com/qwerty123", // Notification When Member Isn't Register
     "banned": "§4§lKamu Sudah Dibanned.", // Notification When Member Has Been Banned
+
     "joinTimeout": 60, // Number In Seconds, How Long Will It Take For Unregistered Players To Play Trial On Your Server
     "bannedTimeout": 10, // Number In Seconds How Long Does It Take To Kick Banned Players On Your Server
+
     "reasonIn": "§r§6-> ", // Custom Sign For In-Game Reason
     "reasonOut": "§r§e-> ", // Custom Sign For Reason When Trying To Join
+
     "theEndOpen": "20.00 31/12/2024", // Format: HH.mm DD/MM/YYY, Ex: "20.00 31/12/2024"
-    "theEndNotification": "The End Belum Dibuka Hingga Waktu Yang Telah Ditetapkan" // Notification For The End
+    "theEndNotification": "The End Belum Dibuka Hingga Waktu Yang Telah Ditetapkan", // Notification For The End
+    "spawn": "default" // Default Player Spawn Event When The End Is Closed, Format: X Y Z, Default Value: 0 64 0, Ex: 100 -58 100
    }
   ```
 
