@@ -4,7 +4,7 @@
 
 # 🌩️ CloudyBridge
 
-Welcome To **CloudyBridge** Add-On Integration For Your Minecraft Bedrock Dedicated Server! This Guide Will Walk You Through The Steps To Get Your Server Connected With Our Bot And Manage Your Community Effectively.
+Welcome To **CloudyBridge** Add-On Integration For Your Minecraft Java And Bedrock Dedicated Server! This Guide Will Walk You Through The Steps To Get Your Server Connected With Our Bot And Manage Your Community Effectively.
 
 ## 🚀 Features
 
@@ -38,73 +38,100 @@ To Get Started With CloudyBridge, Follow These Steps:
    <img src="https://github.com/user-attachments/assets/c939f5c4-89af-49ad-9b0c-6d1fa7ff4690" width="250px">
 
 5. **Download Add-On**:  
-   Go To [Releases](https://github.com/BOTCloudy/CloudyBridge/releases) Section Of This Repository, Download Minceraft Add-On, And Extract It To Your Desired Location.
+   Go To [Releases](https://github.com/BOTCloudy/CloudyBridge/releases) Section Of This Repository, Download Minceraft Add-On `jar For Java` And `zip For Bedrock`.
 
 6. **Configure Server**:
-   - Navigate To `scripts` Folder And Edit The `config.js` File.
-   - Match Server ID And Auth Code You Generated Earlier In The Admin Group.
-  
-  ```javascript
-   export default {
-    "server": "", // Server ID From Admin Group Initialization
-    "auth": "", // Auth Code That You Already Set From Admin Group
-    "whitelist": [], // Allow Specific GT To Use In-Game Command, Ex: ["fankyfankz","Wverrr"]
+      
+      For Java:
+      
+      - You Can Just Drop `CloudyBridge.jar` File Into `plugins` Folder, And Start Your Server.
+      - Once Server Is Started, Go To `CloudyBridge` In `plugins` Folder, And Edit `config.yml`. 
+      
+      ```yaml
+      #Server Config
+      server: ""  # Server ID From Admin Group Initialization
+      auth: ""  # Auth Code That You Already Set From Admin Group
+      whitelist: [] # Allow Specific GT To Use In-Game Command, Ex: ["fankyfankz","Wverrr"]
+      
+      #Default Config
+      prefix: "!"  # Prefix Custom Command
+      gt: "§3§l<CLOUDY> §r§b"  # Custom GT For Command Reply
+      join: "§b§lSilahkan Gabung Ke Group Untuk Bermain.\n§r§ehttps://chat.whatsapp.com/qwerty123"  # Notification When Member Isn't Register
+      banned: "§4§lKamu Sudah Dibanned."  # Notification When Member Has Been Banned
+      joinTimeout: 60  # Number In Seconds, How Long Will It Take For Unregistered Players To Play Trial On Your Server
+      bannedTimeout: 10  # Number In Seconds How Long Does It Take To Kick Banned Players On Your Server
+      reasonIn: "§r§6-> "  # Custom Sign For In-Game Reason
+      reasonOut: "§r§e-> "  # Custom Sign For Reason When Trying To Join
+      theEndOpen: "20.00 31/12/2024"  # Format: HH.mm DD/MM/YYY, Ex: "20.00 31/12/2024"
+      theEndNotification: "The End Belum Dibuka Hingga Waktu Yang Telah Ditetapkan"  # Notification For The End
+      spawn: "0 64 0" # Default Spawn Point X Y Z
+      ```
+           
+      For Bedrock:
+      
+      - Extract `CloudyBridge.zip`
+      - Navigate To `scripts` Folder And Edit The `config.js` File.
+      - Match Server ID And Auth Code You Generated Earlier In The Admin Group.
+      
+      ```javascript
+      export default {
+      "server": "", // Server ID From Admin Group Initialization
+      "auth": "", // Auth Code That You Already Set From Admin Group
+      "whitelist": [], // Allow Specific GT To Use In-Game Command, Ex: ["fankyfankz","Wverrr"]
+      
+      "prefix": "!", // Prefix Custom Command
+      "gt": "§3§l<CLOUDY> §r§b", // Custom GT For Command Reply
+      
+      "join": "§b§lSilahkan Gabung Ke Group Untuk Bermain.\n§r§ehttps://chat.whatsapp.com/qwerty123", // Notification When Member Isn't Register
+      "banned": "§4§lKamu Sudah Dibanned.", // Notification When Member Has Been Banned
+      
+      "joinTimeout": 60, // Number In Seconds, How Long Will It Take For Unregistered Players To Play Trial On Your Server
+      "bannedTimeout": 10, // Number In Seconds How Long Does It Take To Kick Banned Players On Your Server
+      
+      "reasonIn": "§r§6-> ", // Custom Sign For In-Game Reason
+      "reasonOut": "§r§e-> ", // Custom Sign For Reason When Trying To Join
+      
+      "theEndOpen": "20.00 31/12/2024", // Format: HH.mm DD/MM/YYY, Ex: "20.00 31/12/2024"
+      "theEndNotification": "The End Belum Dibuka Hingga Waktu Yang Telah Ditetapkan", // Notification For The End
+      "spawn": "default" // Default Player Spawn Event When The End Is Closed, Format: X Y Z, Default Value: 0 64 0, Ex: 100 -58 100
+      }
+      ```
+      
+      - Move `CloudyBridge` Folder Into Your `behavior_packs` Directory.
+      - Go To Root Folder `worlds\<WorldName>\` And Open `world_behavior_packs.json`, If You Didn't See This, Just Create By That Names.
+      - Add CloudyBridge Pack ID 
+      
+      ```javascript
+      [
+      {
+      "pack_id": "807735f8-8cbb-4915-a33a-d771d68abc02",
+      "version": [0,0,0]
+      }
+      ]
+      ```
+      
+      - Again, Go To Root Folder `config\default\permissions.json` And Add `@minecraft/server-net`
+      
+      ```javascript
+      {
+      "allowed_modules": [
+      "@minecraft/server-gametest",
+      "@minecraft/server",
+      "@minecraft/server-ui",
+      "@minecraft/server-admin",
+      "@minecraft/server-editor",
+      "@minecraft/server-net"
+      ]
+      }
+      ```
+      
+      - Last One, Go To Root Folder And Open `server.properties`, Add `op-permission-level=4` To Gain Highest Role Level For OP, OP Will Be Able To Use Custom Command.
+      
+      ```javascript
+      op-permission-level=4
+      ```
 
-    "prefix": "!", // Prefix Custom Command
-    "gt": "§3§l<CLOUDY> §r§b", // Custom GT For Command Reply
-
-    "join": "§b§lSilahkan Gabung Ke Group Untuk Bermain.\n§r§ehttps://chat.whatsapp.com/qwerty123", // Notification When Member Isn't Register
-    "banned": "§4§lKamu Sudah Dibanned.", // Notification When Member Has Been Banned
-
-    "joinTimeout": 60, // Number In Seconds, How Long Will It Take For Unregistered Players To Play Trial On Your Server
-    "bannedTimeout": 10, // Number In Seconds How Long Does It Take To Kick Banned Players On Your Server
-
-    "reasonIn": "§r§6-> ", // Custom Sign For In-Game Reason
-    "reasonOut": "§r§e-> ", // Custom Sign For Reason When Trying To Join
-
-    "theEndOpen": "20.00 31/12/2024", // Format: HH.mm DD/MM/YYY, Ex: "20.00 31/12/2024"
-    "theEndNotification": "The End Belum Dibuka Hingga Waktu Yang Telah Ditetapkan", // Notification For The End
-    "spawn": "default" // Default Player Spawn Event When The End Is Closed, Format: X Y Z, Default Value: 0 64 0, Ex: 100 -58 100
-   }
-  ```
-
-  - Go To Root Folder `worlds\<WorldName>\` And Open `world_behavior_packs.json`, If You Didn't See This, Just Create By That Names.
-  - Add CloudyBridge Pack ID 
-
-   ```javascript
-   [
-       {
-           "pack_id": "807735f8-8cbb-4915-a33a-d771d68abc02",
-           "version": [0,0,0]
-       }
-   ]
-   ```
-
-   - Again, Go To Root Folder `config\default\permissions.json` And Add `@minecraft/server-net`
-
-   ```javascript
-   {
-     "allowed_modules": [
-       "@minecraft/server-gametest",
-       "@minecraft/server",
-       "@minecraft/server-ui",
-       "@minecraft/server-admin",
-       "@minecraft/server-editor",
-       "@minecraft/server-net"
-     ]
-   }
-   ```
-
-  - The Last One, Go To Root Folder And Open `server.properties`, Add `op-permission-level=4` To Gain Highest Role Level For OP, OP Will Be Able To Use Custom Command.
-
-   ```javascript
-   op-permission-level=4
-   ```
-
-7. **Install Behavior Pack**:
-   Move The `CloudyBridge` Folder Into Your `behavior_packs` Directory.
-
-8. **Start Your Server**:  
+7. **Start Your Server**:  
    Start Your Minecraft Dedicated Server, And You Should See A Notification In The Console `[Scripting] </> REST Server Online` That Everything Is Set Up Correctly.
 
 ## 🔒 Securing Your Server
