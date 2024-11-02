@@ -186,6 +186,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `unban <GameTag/PlayerID/User> <Reason:Optional>` | Unban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `kick <GameTag/PlayerID/User> <Reason:Optional>` | Kick Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `player` | Find Player Information Using Game Tag, Player ID, Or User. |
+| `inventory` | Check Player Inventory Using Game Tag, Player ID, Or User. |
 | `database` | Show Player Database. |
 | `config` | Show / Set Internal Config Depends On Key And Value. |
 | `reset <config/player>` | Reset CloudyBridge Database. |
