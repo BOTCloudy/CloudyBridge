@@ -184,12 +184,15 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `allowlist remove <GameTag/User>` | Remove Game Tag From allowlist. |
 | `ban <GameTag/PlayerID/User> <Reason:Optional>` | Ban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `unban <GameTag/PlayerID/User> <Reason:Optional>` | Unban Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
+| `mute <GameTag/PlayerID/User> <Time>` | Restrict Player From Sending Message. |
+| `unmute <GameTag/PlayerID/User>` | Allow Player To Send Message. |
 | `kick <GameTag/PlayerID/User> <Reason:Optional>` | Kick Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `player` | Find Player Information Using Game Tag, Player ID, Or User. |
 | `inventory` | Check Player Inventory Using Game Tag, Player ID, Or User. |
 | `database` | Show Player Database. |
 | `config` | Show / Set Internal Config Depends On Key And Value. |
 | `reset <config/player>` | Reset CloudyBridge Database. |
+| `cloudy` | Release Version. |
 
 ## ✅ Example Usage: 🚫 Ban
 
