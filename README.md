@@ -93,7 +93,11 @@ To Get Started With CloudyBridge, Follow These Steps:
          
          "theEndOpen": "20.00 31/12/2024", // Format: HH.mm DD/MM/YYY, Ex: "20.00 31/12/2024"
          "theEndNotification": "The End Belum Dibuka Hingga Waktu Yang Telah Ditetapkan", // Notification For The End
-         "spawn": "default" // Default Player Spawn Event When The End Is Closed, Format: X Y Z, Default Value: 0 64 0, Ex: 100 -58 100
+         "spawn": "default", // Default Player Spawn Event When The End Is Closed, Format: X Y Z, Default Value: 0 64 0, Ex: 100 -58 100
+
+         "playerId": true, // Log Player ID
+         "coorJoin": true, // Log Player Coordinates On Join Event
+         "coorLeave": true // Log Player Coordinates On Leave Event
       }
       ```
       
@@ -189,6 +193,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `kick <GameTag/PlayerID/User> <Reason:Optional>` | Kick Specific Game Tag, Player ID, Or User. Optional Reason Can Be Provided. |
 | `player` | Find Player Information Using Game Tag, Player ID, Or User. |
 | `inventory` | Check Player Inventory Using Game Tag, Player ID, Or User. |
+| `coor` | Check Player Coordinates Using Game Tag, Player ID, Or User. |
 | `database` | Show Player Database. |
 | `config` | Show / Set Internal Config Depends On Key And Value. |
 | `reset <config/player>` | Reset CloudyBridge Database. |
