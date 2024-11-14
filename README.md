@@ -194,6 +194,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `player` | Find Player Information Using Game Tag, Player ID, Or User. |
 | `inventory` | Check Player Inventory Using Game Tag, Player ID, Or User. |
 | `coor` | Check Player Coordinates Using Game Tag, Player ID, Or User. |
+| `stats` | Check TPS And Entity. |
 | `database` | Show Player Database. |
 | `config` | Show / Set Internal Config Depends On Key And Value. |
 | `reset <config/player>` | Reset CloudyBridge Database. |
