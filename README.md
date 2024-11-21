@@ -82,8 +82,8 @@ To Get Started With CloudyBridge, Follow These Steps:
          "prefix": "!", // Prefix Custom Command
          "gt": "§3§l<CLOUDY> §r§b", // Custom GT For Command Reply
          
-         "join": "§b§lSilahkan Gabung Ke Group Untuk Bermain.\n§r§ehttps://chat.whatsapp.com/qwerty123", // Notification When Member Isn't Register
-         "banned": "§4§lKamu Sudah Dibanned.", // Notification When Member Has Been Banned
+         "join": "§b§lHay @gt, Silahkan Gabung Ke Group Untuk Bermain.\n§r§ehttps://chat.whatsapp.com/qwerty123", // Notification When Member Isn't Register
+         "banned": "§4§l@gt Kamu Sudah Dibanned.", // Notification When Member Has Been Banned
          
          "joinTimeout": 60, // Number In Seconds, How Long Will It Take For Unregistered Players To Play Trial On Your Server
          "bannedTimeout": 10, // Number In Seconds How Long Does It Take To Kick Banned Players On Your Server
@@ -194,6 +194,8 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `player` | Find Player Information Using Game Tag, Player ID, Or User. |
 | `inventory` | Check Player Inventory Using Game Tag, Player ID, Or User. |
 | `coor` | Check Player Coordinates Using Game Tag, Player ID, Or User. |
+| `equip <GameTag/PlayerID/User>` | Check Player Equipments Using Game Tag, Player ID, Or User. |
+| `lang <en/id>` | Set Your Language To English Or Indonesian. |
 | `stats` | Check TPS And Entity. |
 | `database` | Show Player Database. |
 | `config` | Show / Set Internal Config Depends On Key And Value. |
