@@ -194,6 +194,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `player` | Find Player Information Using Game Tag, Player ID, Or User. |
 | `inventory` | Check Player Inventory Using Game Tag, Player ID, Or User. |
 | `ender` | Check Player Enderchest Using Game Tag, Player ID, Or User. |
+| `chest <inventory/info/player/db>` | Check Chest Using Game Tag. |
 | `coor` | Check Player Coordinates Using Game Tag, Player ID, Or User. |
 | `equip <GameTag/PlayerID/User>` | Check Player Equipments Using Game Tag, Player ID, Or User. |
 | `lang <en/id>` | Set Your Language To English Or Indonesian. |
