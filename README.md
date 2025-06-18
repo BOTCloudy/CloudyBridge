@@ -198,6 +198,7 @@ The Last Step Is To Configure Your Server's IP/Domain And Port Using `/mc server
 | `coor` | Check Player Coordinates Using Game Tag, Player ID, Or User. |
 | `equip <GameTag/PlayerID/User>` | Check Player Equipments Using Game Tag, Player ID, Or User. |
 | `lang <en/id>` | Set Your Language To English Or Indonesian. |
+| `war` | Hardcore Events. |
 | `stats` | Check TPS And Entity. |
 | `database` | Show Player Database. |
 | `config` | Show / Set Internal Config Depends On Key And Value. |
